@@ -13,6 +13,7 @@ Usage:
 import re
 import sys
 import hashlib
+import calendar
 from datetime import datetime, timedelta
 from urllib.parse import urljoin
 
@@ -34,6 +35,7 @@ FORMAT_WORDS = {"DVD", "Blu-ray", "4K"}
 # Once any of these is seen, we stop scraping — everything after this
 # point is not a real release-date entry.
 STOP_HEADINGS = [
+    "Follow DVDs Release Dates",
     "Most Requested DVD Release Dates",
     "DVDs by Genre",
     "New Movies by Year",
@@ -48,14 +50,20 @@ def fetch(url):
     return BeautifulSoup(resp.text, "html.parser")
 
 
-def find_next_month_url(soup):
-    """Look for the '>' next-month pagination link."""
-    for a in soup.find_all("a", href=True):
-        text = a.get_text(strip=True)
-        if re.match(r"^[A-Za-z]{3}\s+\d{4}\s*>$", text) or text.endswith(">"):
-            if "/releases/" in a["href"]:
-                return urljoin(BASE, a["href"])
-    return None
+def next_month_url(year, month):
+    """
+    Build the URL for the following month directly, since the site's
+    pattern is predictable: /releases/{year}/{month}/new-dvd-releases-{monthname}-{year}
+    This is more reliable than trying to find/parse a "next month" link
+    in the page, since that arrow may be rendered as an icon rather than
+    real text.
+    """
+    month += 1
+    if month > 12:
+        month = 1
+        year += 1
+    month_name = calendar.month_name[month].lower()
+    return f"{BASE}/releases/{year}/{month}/new-dvd-releases-{month_name}-{year}"
 
 
 def parse_page(soup):
@@ -74,18 +82,24 @@ def parse_page(soup):
     events = []
     current_date = None
     seen_hrefs = set()
+    hit_stop = False
 
     for tag in soup.body.find_all(True):
         # Update current_date if this tag's visible text starts with a date
         own_text = tag.get_text(" ", strip=True)
 
-        # Stop entirely once we hit the sidebar/footer content — the
-        # length check avoids false-matching a big ancestor container
-        # whose text merely CONTAINS one of these phrases somewhere deep
-        # inside it, rather than being the heading itself.
-        if own_text and len(own_text) < 100:
-            if any(own_text.startswith(h) for h in STOP_HEADINGS):
-                break
+        # Stop entirely once we hit the sidebar/footer content. We check
+        # for the phrase ANYWHERE in a reasonably short tag's text (not
+        # just at the very start), since heading markup sometimes has an
+        # icon or extra character before the visible words.
+        if own_text and len(own_text) < 150:
+            for h in STOP_HEADINGS:
+                if h in own_text:
+                    print(f"  stopping before sidebar content (matched: {h!r})")
+                    hit_stop = True
+                    break
+        if hit_stop:
+            break
 
         if own_text:
             m = DATE_RE.match(own_text)
@@ -120,6 +134,10 @@ def parse_page(soup):
                     "url": urljoin(BASE, href),
                 }
             )
+
+    if not hit_stop:
+        print("  WARNING: never found the sidebar stop marker — "
+              "'Most Requested' movies may have leaked into the results")
 
     return events
 
@@ -181,6 +199,8 @@ def main():
 
     all_events = []
     url = urljoin(BASE, START_PATH)
+    year, month = None, None
+
     for _ in range(months_ahead + 1):
         print(f"Fetching {url}")
         soup = fetch(url)
@@ -188,10 +208,21 @@ def main():
         print(f"  found {len(page_events)} releases")
         all_events.extend(page_events)
 
-        next_url = find_next_month_url(soup)
-        if not next_url:
-            break
-        url = next_url
+        if page_events:
+            # Figure out which (year, month) this page was actually
+            # showing, based on the most common month among the dates
+            # we just found on it — needed so we can build the URL for
+            # the following month.
+            from collections import Counter
+            ym_counts = Counter((e["date"].year, e["date"].month) for e in page_events)
+            year, month = ym_counts.most_common(1)[0][0]
+        elif year is None:
+            # First page had no events at all — fall back to today's
+            # month so we can still attempt to move forward.
+            today = datetime.utcnow().date()
+            year, month = today.year, today.month
+
+        url = next_month_url(year, month)
 
     all_events = dedupe(all_events)
     all_events.sort(key=lambda e: e["date"])
