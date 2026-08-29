@@ -29,6 +29,16 @@ DATE_RE = re.compile(
 MOVIE_HREF_RE = re.compile(r"^/movies/\d+/[\w-]+/?$")
 FORMAT_WORDS = {"DVD", "Blu-ray", "4K"}
 
+# Headings that mark the end of the actual release listing and the start
+# of sidebar/footer content (e.g. "Most Requested DVD Release Dates").
+# Once any of these is seen, we stop scraping — everything after this
+# point is not a real release-date entry.
+STOP_HEADINGS = [
+    "Most Requested DVD Release Dates",
+    "DVDs by Genre",
+    "New Movies by Year",
+]
+
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; release-calendar-bot/1.0)"}
 
 
@@ -50,45 +60,59 @@ def find_next_month_url(soup):
 
 def parse_page(soup):
     """
-    Walk the page in document order. Whenever we see text that looks like
-    a release date, remember it. Whenever we see a link to a movie page,
+    Walk every tag in document order. For each tag, check whether its
+    FULL visible text (get_text, which safely bridges any nested spans
+    or comment nodes) starts with a release-date pattern, and if so
+    update the "current date". Whenever we see a link to a movie page,
     record it under the most recently seen date.
+
+    Checking get_text() on every tag (rather than raw text nodes) means
+    we don't get fooled by a date being split across sibling tags/inline
+    comment markers, which is what caused every movie to collapse onto
+    a single date previously.
     """
     events = []
     current_date = None
-    seen_hrefs_on_date = set()
+    seen_hrefs = set()
 
-    for el in soup.body.descendants:
-        # Track dates from plain text nodes
-        if isinstance(el, str):
-            text = el.strip()
-            if not text:
-                continue
-            m = DATE_RE.match(text)
+    for tag in soup.body.find_all(True):
+        # Update current_date if this tag's visible text starts with a date
+        own_text = tag.get_text(" ", strip=True)
+
+        # Stop entirely once we hit the sidebar/footer content — the
+        # length check avoids false-matching a big ancestor container
+        # whose text merely CONTAINS one of these phrases somewhere deep
+        # inside it, rather than being the heading itself.
+        if own_text and len(own_text) < 100:
+            if any(own_text.startswith(h) for h in STOP_HEADINGS):
+                break
+
+        if own_text:
+            m = DATE_RE.match(own_text)
             if m:
                 try:
-                    current_date = datetime.strptime(
+                    parsed = datetime.strptime(
                         f"{m.group(2)} {m.group(3)} {m.group(4)}", "%B %d %Y"
                     ).date()
-                    seen_hrefs_on_date = set()
+                    current_date = parsed
                 except ValueError:
                     pass
-            continue
 
         # Track movie links
-        if getattr(el, "name", None) == "a" and el.has_attr("href"):
-            href = el["href"]
+        if tag.name == "a" and tag.has_attr("href"):
+            href = tag["href"]
             if not MOVIE_HREF_RE.match(href):
                 continue
-            title = el.get_text(strip=True)
+            title = tag.get_text(strip=True)
             if not title or title in FORMAT_WORDS:
                 continue
             title = re.sub(r"\s*DVD Release Date$", "", title).strip()
             if not title or current_date is None:
                 continue
-            if href in seen_hrefs_on_date:
+            key = (href, current_date)
+            if key in seen_hrefs:
                 continue
-            seen_hrefs_on_date.add(href)
+            seen_hrefs.add(key)
             events.append(
                 {
                     "title": title,
@@ -171,6 +195,15 @@ def main():
 
     all_events = dedupe(all_events)
     all_events.sort(key=lambda e: e["date"])
+
+    # Debug summary: how many events landed on each date, so a bad
+    # scrape (e.g. everything collapsing onto one date) is obvious
+    # from the Action log without needing to inspect the .ics file.
+    from collections import Counter
+    counts = Counter(e["date"] for e in all_events)
+    print("Events per date:")
+    for d in sorted(counts):
+        print(f"  {d}: {counts[d]}")
 
     ics = build_ics(all_events)
 
