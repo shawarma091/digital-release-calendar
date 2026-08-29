@@ -1,0 +1,350 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//release-calendar-bot//dvdsreleasedates//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:New Digital/DVD Releases
+X-WR-TIMEZONE:UTC
+BEGIN:VEVENT
+UID:9364ec5e3104978cd06cfbb4f970b90e116ab372@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260802
+SUMMARY:Soulm8te (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12838/soulm8te
+URL:https://www.dvdsreleasedates.com/movies/12838/soulm8te
+END:VEVENT
+BEGIN:VEVENT
+UID:76eedfbc5040e40a1667f1ad6a6350849102825a@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260804
+DTEND;VALUE=DATE:20260805
+SUMMARY:Evil Dead Burn (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12770/evil-dead-burn
+URL:https://www.dvdsreleasedates.com/movies/12770/evil-dead-burn
+END:VEVENT
+BEGIN:VEVENT
+UID:dc16ee107b4462c25ead56f02afcae3e463c8fe0@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260804
+DTEND;VALUE=DATE:20260805
+SUMMARY:Lucky Strike (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12779/lucky-strike
+URL:https://www.dvdsreleasedates.com/movies/12779/lucky-strike
+END:VEVENT
+BEGIN:VEVENT
+UID:ab25c47d3959e60a75f69b164b4758ffecbbcdac@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260804
+DTEND;VALUE=DATE:20260805
+SUMMARY:Couture (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12868/couture
+URL:https://www.dvdsreleasedates.com/movies/12868/couture
+END:VEVENT
+BEGIN:VEVENT
+UID:f67d817f0947ca921b5df6f2994002a9c25ca167@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260804
+DTEND;VALUE=DATE:20260805
+SUMMARY:Haunted Heist (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12869/haunted-heist
+URL:https://www.dvdsreleasedates.com/movies/12869/haunted-heist
+END:VEVENT
+BEGIN:VEVENT
+UID:50ef38f40d9e030b67524c72aef73be5071f80b6@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260804
+DTEND;VALUE=DATE:20260805
+SUMMARY:The Isolate Thief (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12877/the-isolate-thief
+URL:https://www.dvdsreleasedates.com/movies/12877/the-isolate-thief
+END:VEVENT
+BEGIN:VEVENT
+UID:0460d3f098af1e7c9de1477fce16aec0e4b38619@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260811
+DTEND;VALUE=DATE:20260812
+SUMMARY:Minions & Monsters (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12488/minions-and-monsters
+URL:https://www.dvdsreleasedates.com/movies/12488/minions-and-monsters
+END:VEVENT
+BEGIN:VEVENT
+UID:15ff6edbfb0d9d54653299cadcc67bddfd390d5e@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260811
+DTEND;VALUE=DATE:20260812
+SUMMARY:Young Washington (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12602/young-washington
+URL:https://www.dvdsreleasedates.com/movies/12602/young-washington
+END:VEVENT
+BEGIN:VEVENT
+UID:08d839ea004a11d2ecd083f70bb91ebb0b1e5fba@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260811
+DTEND;VALUE=DATE:20260812
+SUMMARY:The Invite (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12768/the-invite
+URL:https://www.dvdsreleasedates.com/movies/12768/the-invite
+END:VEVENT
+BEGIN:VEVENT
+UID:4e587a145b43e9c71799c55de4afc02a2797c183@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260811
+DTEND;VALUE=DATE:20260812
+SUMMARY:Jackass: Best and Last (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12808/jackass-best-and-last
+URL:https://www.dvdsreleasedates.com/movies/12808/jackass-best-and-last
+END:VEVENT
+BEGIN:VEVENT
+UID:46a7d9cdd771350a4c0cb4efeb846167d04865af@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260811
+DTEND;VALUE=DATE:20260812
+SUMMARY:Gail Daughtry and the Celebrity Sex Pass (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12809/gail-daughtry-and-the-celebrity-sex-pass
+URL:https://www.dvdsreleasedates.com/movies/12809/gail-daughtry-and-the-celebrity-sex-pass
+END:VEVENT
+BEGIN:VEVENT
+UID:dc9894c1e104c7ea55c3294e05474878e748c6fe@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260811
+DTEND;VALUE=DATE:20260812
+SUMMARY:Night Nurse (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12836/night-nurse
+URL:https://www.dvdsreleasedates.com/movies/12836/night-nurse
+END:VEVENT
+BEGIN:VEVENT
+UID:06862ae309af726e0f8da1f3464eb9b719fc3cdc@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260811
+DTEND;VALUE=DATE:20260812
+SUMMARY:Ip Man: Kung Fu Legend (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12788/ip-man-kung-fu-legend
+URL:https://www.dvdsreleasedates.com/movies/12788/ip-man-kung-fu-legend
+END:VEVENT
+BEGIN:VEVENT
+UID:6fd701ccb9637432828796d259077a2ec60b0ff6@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260818
+DTEND;VALUE=DATE:20260819
+SUMMARY:Toy Story 5 (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/11943/toy-story-5
+URL:https://www.dvdsreleasedates.com/movies/11943/toy-story-5
+END:VEVENT
+BEGIN:VEVENT
+UID:6c84bab453e6f0d0e387a0970ad321fd698bd89e@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:Hadestown: The Musical (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12841/hadestown-the-musical
+URL:https://www.dvdsreleasedates.com/movies/12841/hadestown-the-musical
+END:VEVENT
+BEGIN:VEVENT
+UID:1ac34f24d832a341f7fd7f9d8d5011e16690eab7@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:Motor City (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12810/motor-city
+URL:https://www.dvdsreleasedates.com/movies/12810/motor-city
+END:VEVENT
+BEGIN:VEVENT
+UID:fcfb062ff3cc25a0e571f223c2f5c68b1bde7cd4@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:Her Private Hell (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12867/her-private-hell
+URL:https://www.dvdsreleasedates.com/movies/12867/her-private-hell
+END:VEVENT
+BEGIN:VEVENT
+UID:54cb7a0e2fd2e5326b4001e15f2db0aa81fa276b@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:Pinocchio: Unstrung (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12157/pinocchio-unstrung
+URL:https://www.dvdsreleasedates.com/movies/12157/pinocchio-unstrung
+END:VEVENT
+BEGIN:VEVENT
+UID:4372db60154a13f1e9af5db89b7be5eb8fd124dd@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:Above & Below (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12848/above-and-below
+URL:https://www.dvdsreleasedates.com/movies/12848/above-and-below
+END:VEVENT
+BEGIN:VEVENT
+UID:e9d3c3fd64fa59d4cb3aaa5a3c7f6d6a91e07430@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:Batman: Knightfall Part 1: Knightfall (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12825/batman-knightfall-part-1-knightfall
+URL:https://www.dvdsreleasedates.com/movies/12825/batman-knightfall-part-1-knightfall
+END:VEVENT
+BEGIN:VEVENT
+UID:b80afecf309885f10cd21288c6655b8ad0774910@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:Spider-Man: Brand New Day (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/11346/spider-man-brand-new-day
+URL:https://www.dvdsreleasedates.com/movies/11346/spider-man-brand-new-day
+END:VEVENT
+BEGIN:VEVENT
+UID:2dde0c2a1614720f4258b0bfcb13f526f4dbb0e2@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:The Odyssey (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12312/the-odyssey
+URL:https://www.dvdsreleasedates.com/movies/12312/the-odyssey
+END:VEVENT
+BEGIN:VEVENT
+UID:6b79ddcc132f4a11121788a0156a67c38fa91976@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:Descendent (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12479/descendent
+URL:https://www.dvdsreleasedates.com/movies/12479/descendent
+END:VEVENT
+BEGIN:VEVENT
+UID:254b968a45ce9a4f9a775aa973a548d8df8d01e5@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:The End of Oak Street (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/11855/the-end-of-oak-street
+URL:https://www.dvdsreleasedates.com/movies/11855/the-end-of-oak-street
+END:VEVENT
+BEGIN:VEVENT
+UID:74fa40a7aa4c83dc95dab8a4fa8bbb70a91347ca@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:Backrooms (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12784/backrooms
+URL:https://www.dvdsreleasedates.com/movies/12784/backrooms
+END:VEVENT
+BEGIN:VEVENT
+UID:ec493e2d76791f0733da7605a06e743e70354077@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:Moana (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/11703/moana
+URL:https://www.dvdsreleasedates.com/movies/11703/moana
+END:VEVENT
+BEGIN:VEVENT
+UID:9924ff1741312da70b9c3c7d6e51530c0230614c@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:PAW Patrol: The Dino Movie (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12487/paw-patrol-the-dino-movie
+URL:https://www.dvdsreleasedates.com/movies/12487/paw-patrol-the-dino-movie
+END:VEVENT
+BEGIN:VEVENT
+UID:44c53ff4d92863e282bf8cfe2d76a433dafbc95c@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:Toy Story 5 (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/11943/toy-story-5
+URL:https://www.dvdsreleasedates.com/movies/11943/toy-story-5
+END:VEVENT
+BEGIN:VEVENT
+UID:41b31fd3f1a56c3d9195eda8bc19cf7f54e91817@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:Star Wars: The Mandalorian and Grogu (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/11911/star-wars-the-mandalorian-and-grogu
+URL:https://www.dvdsreleasedates.com/movies/11911/star-wars-the-mandalorian-and-grogu
+END:VEVENT
+BEGIN:VEVENT
+UID:36069e09a1817cf709364edba09ae27abfca7101@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:Ice Cream Man (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12723/ice-cream-man
+URL:https://www.dvdsreleasedates.com/movies/12723/ice-cream-man
+END:VEVENT
+BEGIN:VEVENT
+UID:b6c145f7f0fac61fcebb3eef8b070d850d8cd73c@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:Supergirl (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/11764/supergirl
+URL:https://www.dvdsreleasedates.com/movies/11764/supergirl
+END:VEVENT
+BEGIN:VEVENT
+UID:8176a31a4d06e3f6efab929dc9b0805b9477bb39@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:Disclosure Day (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12635/disclosure-day
+URL:https://www.dvdsreleasedates.com/movies/12635/disclosure-day
+END:VEVENT
+BEGIN:VEVENT
+UID:0ef96d417524c6faf87b4462859a8f75684dea30@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:Insidious: Out of the Further (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12646/insidious-out-of-the-further
+URL:https://www.dvdsreleasedates.com/movies/12646/insidious-out-of-the-further
+END:VEVENT
+BEGIN:VEVENT
+UID:85ea634585d7037a2629dab78734da553efcddf8@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:Minions & Monsters (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12488/minions-and-monsters
+URL:https://www.dvdsreleasedates.com/movies/12488/minions-and-monsters
+END:VEVENT
+BEGIN:VEVENT
+UID:fdbcf1119116ed7481d7e48475f8d3740d204d95@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:Mutiny (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12376/mutiny
+URL:https://www.dvdsreleasedates.com/movies/12376/mutiny
+END:VEVENT
+BEGIN:VEVENT
+UID:54a655eaa4a514597f70bd63113b300140a284ca@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:Barbarian (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/10943/barbarian
+URL:https://www.dvdsreleasedates.com/movies/10943/barbarian
+END:VEVENT
+BEGIN:VEVENT
+UID:7577a767584ffda0c140a1a32481f800c108a13e@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:Masters of the Universe (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/8663/masters-of-the-universe
+URL:https://www.dvdsreleasedates.com/movies/8663/masters-of-the-universe
+END:VEVENT
+BEGIN:VEVENT
+UID:6e66cdbb0da1d7637b7573fc5e5cb1a7673e1a19@dvdsreleasedates-calendar
+DTSTAMP:20260829T061958Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:Jurassic World Dominion (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/9083/jurassic-world-dominion
+URL:https://www.dvdsreleasedates.com/movies/9083/jurassic-world-dominion
+END:VEVENT
+END:VCALENDAR
