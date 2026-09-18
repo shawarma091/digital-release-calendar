@@ -52,92 +52,128 @@ def fetch(url):
 
 def next_month_url(year, month):
     """
-    Build the URL for the following month directly, since the site's
-    pattern is predictable: /releases/{year}/{month}/new-dvd-releases-{monthname}-{year}
-    This is more reliable than trying to find/parse a "next month" link
-    in the page, since that arrow may be rendered as an icon rather than
-    real text.
+    Build the following month's DIGITAL releases URL.
+
+    Pattern:
+    /digital-releases/{year}/{month}/digital-hd-releases-{monthname}-{year}
+
+    This must not use /releases/... because that is the DVD/Blu-ray calendar.
     """
     month += 1
     if month > 12:
         month = 1
         year += 1
     month_name = calendar.month_name[month].lower()
-    return f"{BASE}/releases/{year}/{month}/new-dvd-releases-{month_name}-{year}"
+    return (
+        f"{BASE}/digital-releases/{year}/{month}/"
+        f"digital-hd-releases-{month_name}-{year}"
+    )
 
 
 def parse_page(soup):
     """
-    Walk every tag in document order. For each tag, check whether its
-    FULL visible text (get_text, which safely bridges any nested spans
-    or comment nodes) starts with a release-date pattern, and if so
-    update the "current date". Whenever we see a link to a movie page,
-    record it under the most recently seen date.
+    Parse only the real release listing.
 
-    Checking get_text() on every tag (rather than raw text nodes) means
-    we don't get fooled by a date being split across sibling tags/inline
-    comment markers, which is what caused every movie to collapse onto
-    a single date previously.
+    First locate the sidebar/footer heading in the DOM and create a hard
+    positional cutoff. This prevents "Most Requested" movie links from
+    inheriting the final genuine release date.
     """
     events = []
     current_date = None
     seen_hrefs = set()
-    hit_stop = False
 
-    for tag in soup.body.find_all(True):
-        # Update current_date if this tag's visible text starts with a date
-        own_text = tag.get_text(" ", strip=True)
+    body = soup.body
+    if body is None:
+        print("  WARNING: page has no <body>")
+        return events
 
-        # Stop entirely once we hit the sidebar/footer content. We check
-        # for the phrase ANYWHERE in a reasonably short tag's text (not
-        # just at the very start), since heading markup sometimes has an
-        # icon or extra character before the visible words.
-        if own_text and len(own_text) < 150:
-            for h in STOP_HEADINGS:
-                if h in own_text:
-                    print(f"  stopping before sidebar content (matched: {h!r})")
-                    hit_stop = True
-                    break
-        if hit_stop:
+    tags = list(body.find_all(True))
+    tag_position = {id(tag): i for i, tag in enumerate(tags)}
+
+    stop_tag = None
+    stop_heading = None
+
+    # Preferred method: find an actual sidebar heading.
+    for tag in body.find_all(re.compile(r"^h[1-6]$")):
+        heading_text = " ".join(tag.stripped_strings)
+        for heading in STOP_HEADINGS:
+            if heading.lower() in heading_text.lower():
+                stop_tag = tag
+                stop_heading = heading_text
+                break
+        if stop_tag is not None:
             break
+
+    # Fallback if the site changes the heading to another element.
+    if stop_tag is None:
+        for tag in tags:
+            visible = " ".join(tag.stripped_strings)
+            if not visible or len(visible) > 100:
+                continue
+            normalized = re.sub(r"\s+", " ", visible).strip().lower()
+            for heading in STOP_HEADINGS:
+                h = heading.lower()
+                if normalized == h or normalized.startswith(h + " "):
+                    stop_tag = tag
+                    stop_heading = visible
+                    break
+            if stop_tag is not None:
+                break
+
+    cutoff = tag_position.get(id(stop_tag), len(tags))
+
+    if stop_tag is not None:
+        print(
+            f"  hard DOM cutoff before sidebar content "
+            f"(matched: {stop_heading!r}, tag: <{stop_tag.name}>)"
+        )
+    else:
+        print("  WARNING: sidebar cutoff heading not found")
+
+    for pos, tag in enumerate(tags):
+        if pos >= cutoff:
+            break
+
+        own_text = tag.get_text(" ", strip=True)
 
         if own_text:
             m = DATE_RE.match(own_text)
             if m:
                 try:
-                    parsed = datetime.strptime(
-                        f"{m.group(2)} {m.group(3)} {m.group(4)}", "%B %d %Y"
+                    current_date = datetime.strptime(
+                        f"{m.group(2)} {m.group(3)} {m.group(4)}",
+                        "%B %d %Y",
                     ).date()
-                    current_date = parsed
                 except ValueError:
                     pass
 
-        # Track movie links
-        if tag.name == "a" and tag.has_attr("href"):
-            href = tag["href"]
-            if not MOVIE_HREF_RE.match(href):
-                continue
-            title = tag.get_text(strip=True)
-            if not title or title in FORMAT_WORDS:
-                continue
-            title = re.sub(r"\s*DVD Release Date$", "", title).strip()
-            if not title or current_date is None:
-                continue
-            key = (href, current_date)
-            if key in seen_hrefs:
-                continue
-            seen_hrefs.add(key)
-            events.append(
-                {
-                    "title": title,
-                    "date": current_date,
-                    "url": urljoin(BASE, href),
-                }
-            )
+        if tag.name != "a" or not tag.has_attr("href"):
+            continue
 
-    if not hit_stop:
-        print("  WARNING: never found the sidebar stop marker — "
-              "'Most Requested' movies may have leaked into the results")
+        href = tag["href"]
+        if not MOVIE_HREF_RE.match(href):
+            continue
+
+        title = tag.get_text(strip=True)
+        if not title or title in FORMAT_WORDS:
+            continue
+
+        title = re.sub(r"\s*DVD Release Date$", "", title).strip()
+        if not title or current_date is None:
+            continue
+
+        key = (href, current_date)
+        if key in seen_hrefs:
+            continue
+        seen_hrefs.add(key)
+
+        events.append(
+            {
+                "title": title,
+                "date": current_date,
+                "url": urljoin(BASE, href),
+            }
+        )
 
     return events
 
