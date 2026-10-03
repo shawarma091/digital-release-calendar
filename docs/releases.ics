@@ -6,8 +6,17 @@ METHOD:PUBLISH
 X-WR-CALNAME:New Digital/DVD Releases
 X-WR-TIMEZONE:UTC
 BEGIN:VEVENT
+UID:7192de7947dbbaf6ed39e03d4ac8d3d036150989@dvdsreleasedates-calendar
+DTSTAMP:20261003T140013Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:Tom and Jerry: Forbidden Compass (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12900/tom-and-jerry-forbidden-compass
+URL:https://www.dvdsreleasedates.com/movies/12900/tom-and-jerry-forbidden-compass
+END:VEVENT
+BEGIN:VEVENT
 UID:378f34636d4cb1e5f218569c9038685455ed2938@dvdsreleasedates-calendar
-DTSTAMP:20261002T150745Z
+DTSTAMP:20261003T140013Z
 DTSTART;VALUE=DATE:20261006
 DTEND;VALUE=DATE:20261007
 SUMMARY:Spider-Man: Brand New Day (Release)
@@ -16,7 +25,7 @@ URL:https://www.dvdsreleasedates.com/movies/11346/spider-man-brand-new-day
 END:VEVENT
 BEGIN:VEVENT
 UID:c7369eed5e82454d4cb21cc469418adb0c867ad7@dvdsreleasedates-calendar
-DTSTAMP:20261002T150745Z
+DTSTAMP:20261003T140013Z
 DTSTART;VALUE=DATE:20261006
 DTEND;VALUE=DATE:20261007
 SUMMARY:Insidious: Out of the Further (Release)
@@ -25,7 +34,7 @@ URL:https://www.dvdsreleasedates.com/movies/12646/insidious-out-of-the-further
 END:VEVENT
 BEGIN:VEVENT
 UID:2f186f8df9bf090aa6b84415f056ef394d1bd944@dvdsreleasedates-calendar
-DTSTAMP:20261002T150745Z
+DTSTAMP:20261003T140013Z
 DTSTART;VALUE=DATE:20261006
 DTEND;VALUE=DATE:20261007
 SUMMARY:Fall 2: Deadpoint (Release)
@@ -34,7 +43,7 @@ URL:https://www.dvdsreleasedates.com/movies/12888/fall-2-deadpoint
 END:VEVENT
 BEGIN:VEVENT
 UID:f0fd6760b9212f78a10df871abcd4a39319edb66@dvdsreleasedates-calendar
-DTSTAMP:20261002T150745Z
+DTSTAMP:20261003T140013Z
 DTSTART;VALUE=DATE:20261006
 DTEND;VALUE=DATE:20261007
 SUMMARY:Onslaught (Release)
@@ -43,7 +52,7 @@ URL:https://www.dvdsreleasedates.com/movies/12889/onslaught
 END:VEVENT
 BEGIN:VEVENT
 UID:4c31063189e21c625a780575aaecde551300ca6a@dvdsreleasedates-calendar
-DTSTAMP:20261002T150745Z
+DTSTAMP:20261003T140013Z
 DTSTART;VALUE=DATE:20261006
 DTEND;VALUE=DATE:20261007
 SUMMARY:Late Fame (Release)
@@ -52,7 +61,7 @@ URL:https://www.dvdsreleasedates.com/movies/12732/late-fame
 END:VEVENT
 BEGIN:VEVENT
 UID:d09ac5e0e1598dade6a87edcaca791e58ecde7c3@dvdsreleasedates-calendar
-DTSTAMP:20261002T150745Z
+DTSTAMP:20261003T140013Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261014
 SUMMARY:Practical Magic 2 (Release)
@@ -61,7 +70,7 @@ URL:https://www.dvdsreleasedates.com/movies/12536/practical-magic-2
 END:VEVENT
 BEGIN:VEVENT
 UID:54f4a1993ef8ff90b1fbde065873b59ccf0af5f8@dvdsreleasedates-calendar
-DTSTAMP:20261002T150745Z
+DTSTAMP:20261003T140013Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261014
 SUMMARY:Runner (Release)
@@ -70,7 +79,7 @@ URL:https://www.dvdsreleasedates.com/movies/12751/runner
 END:VEVENT
 BEGIN:VEVENT
 UID:ec67c3a1404f9cb7504f900907b984b3341feb50@dvdsreleasedates-calendar
-DTSTAMP:20261002T150745Z
+DTSTAMP:20261003T140013Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261014
 SUMMARY:Hope (Release)
@@ -79,7 +88,7 @@ URL:https://www.dvdsreleasedates.com/movies/12895/hope
 END:VEVENT
 BEGIN:VEVENT
 UID:b442298de2541f3a1da076307a1fd5d8bb5bd013@dvdsreleasedates-calendar
-DTSTAMP:20261002T150745Z
+DTSTAMP:20261003T140013Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:By Any Means (Release)
@@ -88,7 +97,7 @@ URL:https://www.dvdsreleasedates.com/movies/12805/by-any-means
 END:VEVENT
 BEGIN:VEVENT
 UID:d0bc5a948afa077a285a4491b0f7047e43037aa3@dvdsreleasedates-calendar
-DTSTAMP:20261002T150745Z
+DTSTAMP:20261003T140013Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Tiny Fugitives (Release)
@@ -97,7 +106,7 @@ URL:https://www.dvdsreleasedates.com/movies/12926/tiny-fugitives
 END:VEVENT
 BEGIN:VEVENT
 UID:32cf8d2873e54e8e4e0fb0e88fd40ee740086eba@dvdsreleasedates-calendar
-DTSTAMP:20261002T150745Z
+DTSTAMP:20261003T140013Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:Forgotten Island (Release)
@@ -105,8 +114,17 @@ DESCRIPTION:https://www.dvdsreleasedates.com/movies/12828/forgotten-island
 URL:https://www.dvdsreleasedates.com/movies/12828/forgotten-island
 END:VEVENT
 BEGIN:VEVENT
+UID:663cef5b38dd5c94fc6bf97f083b2a39ebd401b8@dvdsreleasedates-calendar
+DTSTAMP:20261003T140013Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12899/shaun-the-sheep-the-beast-of-mossy-bottom
+URL:https://www.dvdsreleasedates.com/movies/12899/shaun-the-sheep-the-beast-of-mossy-bottom
+END:VEVENT
+BEGIN:VEVENT
 UID:b8f47d88ecd739c6031f33a681b85bf73d2e7fa3@dvdsreleasedates-calendar
-DTSTAMP:20261002T150745Z
+DTSTAMP:20261003T140013Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:The Stunt Driver (Release)
@@ -115,7 +133,7 @@ URL:https://www.dvdsreleasedates.com/movies/12914/the-stunt-driver
 END:VEVENT
 BEGIN:VEVENT
 UID:7da0fb8990ddb0ef979afc0362d12abca593f33e@dvdsreleasedates-calendar
-DTSTAMP:20261002T150745Z
+DTSTAMP:20261003T140013Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:Verity (Release)
@@ -124,7 +142,7 @@ URL:https://www.dvdsreleasedates.com/movies/12309/verity
 END:VEVENT
 BEGIN:VEVENT
 UID:e23f7ac91a804185b94bd9279a978401d4a58b2e@dvdsreleasedates-calendar
-DTSTAMP:20261002T150745Z
+DTSTAMP:20261003T140013Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Primetime (Release)
@@ -132,17 +150,8 @@ DESCRIPTION:https://www.dvdsreleasedates.com/movies/12911/primetime
 URL:https://www.dvdsreleasedates.com/movies/12911/primetime
 END:VEVENT
 BEGIN:VEVENT
-UID:ab50a301a59ea067ffb8ded2dc207c0d4f090634@dvdsreleasedates-calendar
-DTSTAMP:20261002T150745Z
-DTSTART;VALUE=DATE:20261103
-DTEND;VALUE=DATE:20261104
-SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom (Release)
-DESCRIPTION:https://www.dvdsreleasedates.com/movies/12899/shaun-the-sheep-the-beast-of-mossy-bottom
-URL:https://www.dvdsreleasedates.com/movies/12899/shaun-the-sheep-the-beast-of-mossy-bottom
-END:VEVENT
-BEGIN:VEVENT
 UID:c1699f7abb819a2e2286bf55d4f14b99a1325230@dvdsreleasedates-calendar
-DTSTAMP:20261002T150745Z
+DTSTAMP:20261003T140013Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Heart of the Beast (Release)
