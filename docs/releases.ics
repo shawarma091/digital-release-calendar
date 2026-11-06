@@ -7,7 +7,7 @@ X-WR-CALNAME:New Digital/DVD Releases
 X-WR-TIMEZONE:UTC
 BEGIN:VEVENT
 UID:4a77bb1a826f08143fed608f9ebce93686fec1ec@dvdsreleasedates-calendar
-DTSTAMP:20261105T165424Z
+DTSTAMP:20261106T162333Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Resident Evil (Release)
@@ -16,7 +16,7 @@ URL:https://www.dvdsreleasedates.com/movies/12644/resident-evil
 END:VEVENT
 BEGIN:VEVENT
 UID:e23f7ac91a804185b94bd9279a978401d4a58b2e@dvdsreleasedates-calendar
-DTSTAMP:20261105T165424Z
+DTSTAMP:20261106T162333Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Primetime (Release)
@@ -25,7 +25,7 @@ URL:https://www.dvdsreleasedates.com/movies/12911/primetime
 END:VEVENT
 BEGIN:VEVENT
 UID:96f2db24cf26ac8ac77a060a6790a42372c4d29e@dvdsreleasedates-calendar
-DTSTAMP:20261105T165424Z
+DTSTAMP:20261106T162333Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Sense and Sensibility (Release)
@@ -34,7 +34,7 @@ URL:https://www.dvdsreleasedates.com/movies/12945/sense-and-sensibility
 END:VEVENT
 BEGIN:VEVENT
 UID:9e5bbc6b5a032d689ee65ff48f7e74138a4af3a5@dvdsreleasedates-calendar
-DTSTAMP:20261105T165424Z
+DTSTAMP:20261106T162333Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Daniel and the Fiery Furnace (Release)
@@ -43,7 +43,7 @@ URL:https://www.dvdsreleasedates.com/movies/12908/daniel-and-the-fiery-furnace
 END:VEVENT
 BEGIN:VEVENT
 UID:f781900a3227ae6efa72aa8270530d5b05bca27a@dvdsreleasedates-calendar
-DTSTAMP:20261105T165424Z
+DTSTAMP:20261106T162333Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Your Mother Your Mother Your Mother (Release)
@@ -52,7 +52,7 @@ URL:https://www.dvdsreleasedates.com/movies/12923/your-mother-your-mother-your-m
 END:VEVENT
 BEGIN:VEVENT
 UID:348560aa9f7c7e4e924f3dd7e301a62c9bd43bd1@dvdsreleasedates-calendar
-DTSTAMP:20261105T165424Z
+DTSTAMP:20261106T162333Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Beware Boiúna (Release)
@@ -61,7 +61,7 @@ URL:https://www.dvdsreleasedates.com/movies/12930/beware-boiúna
 END:VEVENT
 BEGIN:VEVENT
 UID:8d30b51548137218185b7445e5a34d094cc556f7@dvdsreleasedates-calendar
-DTSTAMP:20261105T165424Z
+DTSTAMP:20261106T162333Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Charlie Harper (Release)
@@ -70,7 +70,7 @@ URL:https://www.dvdsreleasedates.com/movies/12949/charlie-harper
 END:VEVENT
 BEGIN:VEVENT
 UID:0b46f91fe1bb03f6b331455cef85baebd0c1d603@dvdsreleasedates-calendar
-DTSTAMP:20261105T165424Z
+DTSTAMP:20261106T162333Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Model Citizen (Release)
@@ -79,7 +79,7 @@ URL:https://www.dvdsreleasedates.com/movies/12942/model-citizen
 END:VEVENT
 BEGIN:VEVENT
 UID:5cbb412cd836a33e13831120d2f1dbdb8624c669@dvdsreleasedates-calendar
-DTSTAMP:20261105T165424Z
+DTSTAMP:20261106T162333Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Without Blood (Release)
@@ -87,8 +87,17 @@ DESCRIPTION:https://www.dvdsreleasedates.com/movies/12905/without-blood
 URL:https://www.dvdsreleasedates.com/movies/12905/without-blood
 END:VEVENT
 BEGIN:VEVENT
+UID:61a2410509f1272aa08a6812bdd1c5450aa58c41@dvdsreleasedates-calendar
+DTSTAMP:20261106T162333Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Angel and the Badman (Release)
+DESCRIPTION:https://www.dvdsreleasedates.com/movies/12916/angel-and-the-badman
+URL:https://www.dvdsreleasedates.com/movies/12916/angel-and-the-badman
+END:VEVENT
+BEGIN:VEVENT
 UID:e1ccf03c243245e8234250fb9762ee424c6b8c27@dvdsreleasedates-calendar
-DTSTAMP:20261105T165424Z
+DTSTAMP:20261106T162333Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Musk (Release)
@@ -97,7 +106,7 @@ URL:https://www.dvdsreleasedates.com/movies/12950/musk
 END:VEVENT
 BEGIN:VEVENT
 UID:c1699f7abb819a2e2286bf55d4f14b99a1325230@dvdsreleasedates-calendar
-DTSTAMP:20261105T165424Z
+DTSTAMP:20261106T162333Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Heart of the Beast (Release)
@@ -106,7 +115,7 @@ URL:https://www.dvdsreleasedates.com/movies/12308/heart-of-the-beast
 END:VEVENT
 BEGIN:VEVENT
 UID:3821d7caad01d56ce6537e5e3c397492e9e00b05@dvdsreleasedates-calendar
-DTSTAMP:20261105T165424Z
+DTSTAMP:20261106T162333Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Other Mommy (Release)
@@ -114,17 +123,8 @@ DESCRIPTION:https://www.dvdsreleasedates.com/movies/12846/other-mommy
 URL:https://www.dvdsreleasedates.com/movies/12846/other-mommy
 END:VEVENT
 BEGIN:VEVENT
-UID:7bba5eb270eeb4008c709f5ea065e29940f3e96d@dvdsreleasedates-calendar
-DTSTAMP:20261105T165424Z
-DTSTART;VALUE=DATE:20261110
-DTEND;VALUE=DATE:20261111
-SUMMARY:Angel and the Badman (Release)
-DESCRIPTION:https://www.dvdsreleasedates.com/movies/12916/angel-and-the-badman
-URL:https://www.dvdsreleasedates.com/movies/12916/angel-and-the-badman
-END:VEVENT
-BEGIN:VEVENT
 UID:618959057047126926e7b2489e0669669ddad52a@dvdsreleasedates-calendar
-DTSTAMP:20261105T165424Z
+DTSTAMP:20261106T162333Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Crawlers (Release)
@@ -133,7 +133,7 @@ URL:https://www.dvdsreleasedates.com/movies/12946/crawlers
 END:VEVENT
 BEGIN:VEVENT
 UID:15d73aa86a3c303ce5202e39276d28b50d9b6af9@dvdsreleasedates-calendar
-DTSTAMP:20261105T165424Z
+DTSTAMP:20261106T162333Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261118
 SUMMARY:The Odyssey (Release)
@@ -142,7 +142,7 @@ URL:https://www.dvdsreleasedates.com/movies/12312/the-odyssey
 END:VEVENT
 BEGIN:VEVENT
 UID:24fb5a6c59f06eff76b56a47f7f72dd67ae2c716@dvdsreleasedates-calendar
-DTSTAMP:20261105T165424Z
+DTSTAMP:20261106T162333Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261118
 SUMMARY:A Talent for Murder (Release)
@@ -151,7 +151,7 @@ URL:https://www.dvdsreleasedates.com/movies/12904/a-talent-for-murder
 END:VEVENT
 BEGIN:VEVENT
 UID:309ec9788301468c5b497d97bdab395c44a47ae0@dvdsreleasedates-calendar
-DTSTAMP:20261105T165424Z
+DTSTAMP:20261106T162333Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261118
 SUMMARY:The Beast (Release)
@@ -160,7 +160,7 @@ URL:https://www.dvdsreleasedates.com/movies/12943/the-beast
 END:VEVENT
 BEGIN:VEVENT
 UID:a84eb9c823682662c3ada82d21474a4ae0d8de18@dvdsreleasedates-calendar
-DTSTAMP:20261105T165424Z
+DTSTAMP:20261106T162333Z
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
 SUMMARY:Wicker (Release)
@@ -169,7 +169,7 @@ URL:https://www.dvdsreleasedates.com/movies/12852/wicker
 END:VEVENT
 BEGIN:VEVENT
 UID:49d16c977fa01951b0a39906a8f22a3004cbd4d0@dvdsreleasedates-calendar
-DTSTAMP:20261105T165424Z
+DTSTAMP:20261106T162333Z
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
 SUMMARY:The Social Reckoning (Release)
@@ -178,7 +178,7 @@ URL:https://www.dvdsreleasedates.com/movies/12652/the-social-reckoning
 END:VEVENT
 BEGIN:VEVENT
 UID:a8037a53aa5e8d860269f9fc0d92b400d0d68f3f@dvdsreleasedates-calendar
-DTSTAMP:20261105T165424Z
+DTSTAMP:20261106T162333Z
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
 SUMMARY:Breeder (Release)
@@ -187,7 +187,7 @@ URL:https://www.dvdsreleasedates.com/movies/12966/breeder
 END:VEVENT
 BEGIN:VEVENT
 UID:ab56b9b1f9c3f97206e89b00dcf3492ef5ac25cd@dvdsreleasedates-calendar
-DTSTAMP:20261105T165424Z
+DTSTAMP:20261106T162333Z
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
 SUMMARY:Best Pancakes in the County (Release)
@@ -196,7 +196,7 @@ URL:https://www.dvdsreleasedates.com/movies/12960/best-pancakes-in-the-county
 END:VEVENT
 BEGIN:VEVENT
 UID:bdd562984252a0b3731b10afd441887ff8ca56e8@dvdsreleasedates-calendar
-DTSTAMP:20261105T165424Z
+DTSTAMP:20261106T162333Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:Street Fighter (Release)
@@ -205,7 +205,7 @@ URL:https://www.dvdsreleasedates.com/movies/12597/street-fighter
 END:VEVENT
 BEGIN:VEVENT
 UID:c106680f1f1429a71b55c71b40e37bc4be22d3e7@dvdsreleasedates-calendar
-DTSTAMP:20261105T165424Z
+DTSTAMP:20261106T162333Z
 DTSTART;VALUE=DATE:20261208
 DTEND;VALUE=DATE:20261209
 SUMMARY:Clayface (Release)
@@ -214,7 +214,7 @@ URL:https://www.dvdsreleasedates.com/movies/12534/clayface
 END:VEVENT
 BEGIN:VEVENT
 UID:c5f5b3d43bdb310784e40409e5604ca556084b5c@dvdsreleasedates-calendar
-DTSTAMP:20261105T165424Z
+DTSTAMP:20261106T162333Z
 DTSTART;VALUE=DATE:20261208
 DTEND;VALUE=DATE:20261209
 SUMMARY:Wildwood (Release)
@@ -223,7 +223,7 @@ URL:https://www.dvdsreleasedates.com/movies/12778/wildwood
 END:VEVENT
 BEGIN:VEVENT
 UID:5988a8257e3e753376ce9397467141b68e7eb573@dvdsreleasedates-calendar
-DTSTAMP:20261105T165424Z
+DTSTAMP:20261106T162333Z
 DTSTART;VALUE=DATE:20261215
 DTEND;VALUE=DATE:20261216
 SUMMARY:Batman: Knightfall Part 2: Knightquest (Release)
